@@ -61,7 +61,7 @@ export default class DynamicArray<T = unknown> extends LinkedList implements IDy
         this.#length++;
     }
 
-    public get(index: number): number {
+    public get(index: number): T {
         const searchItemOfLLIndex = Math.trunc(index / this.#itemArrayLength);
         const searchItem = this.#dynArr.getItemByIndex(searchItemOfLLIndex);
         if(searchItem){
