@@ -2,6 +2,8 @@ export interface IListNode<T> {
     data: T
     next: IListNode<T> | null
     prev: IListNode<T> | null
+
+    getKey(): T
 }
 
 export interface ILinkedList<T> {

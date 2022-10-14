@@ -8,4 +8,8 @@ export default class ListNode<T> implements IListNode<T> {
     constructor(data: T) {
         this.data = data;
     }
+
+    public getKey(): T {
+        return this.data;
+    }
 }
