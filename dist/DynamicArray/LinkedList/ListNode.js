@@ -6,5 +6,8 @@ class ListNode {
         this.prev = null;
         this.data = data;
     }
+    getKey() {
+        return this.data;
+    }
 }
 exports.default = ListNode;
